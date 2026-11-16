@@ -1,0 +1,30 @@
+{
+  "name": "tiny-tales",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Tiny Tales: personalised bedtime stories for parents to read to their children",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "golden": "tsx --env-file-if-exists=.env scripts/run-golden.ts",
+    "golden:mock": "tsx scripts/run-golden.ts --provider mock",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@fontsource-variable/fraunces": "^5.3.0",
+    "@fontsource-variable/nunito": "^5.3.0",
+    "next": "^15.5.29",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}
